@@ -93,7 +93,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="matplotlib")
 # In[2]:
 
 
-df = pd.read_csv('spotify_youtube.csv')
+df = pd.read_csv('Spotify_Youtube.csv')
 df.sample(5)
 
 
@@ -122,7 +122,7 @@ df.columns
 # In[4]:
 
 
-df.drop(columns=['Unnamed: 0','Url_spotify','Uri','Url_youtube','Description','Title'],inplace=True)
+df.drop(columns=['Title'],inplace=True)
 
 
 # DataSet after deleting columns that are not useful.
